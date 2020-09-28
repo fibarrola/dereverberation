@@ -9,8 +9,6 @@ The function der_beta takes a .wav file as input corresponding to the reverberan
 
 Parameter description
 
-* git clone https://github.com/your_username_/Project-Name.git
-
 * wsize: window size (in samples) for STFT.
 
 * overl: window overlapping (in samples) for STFT.
