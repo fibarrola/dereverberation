@@ -8,25 +8,25 @@ A blind, single channel dereverberation method in the time-frequency domain that
 The function der_beta takes a .wav file as input corresponding to the reverberant signal (isrev = 1), or to a clean signal that it will make reverberant if isrev = 0.
 
 Parameter description
-```sh
-git clone https://github.com/your_username_/Project-Name.git
 
-wsize: window size (in samples) for STFT.
+* git clone https://github.com/your_username_/Project-Name.git
 
-overl: window overlapping (in samples) for STFT.
+* wsize: window size (in samples) for STFT.
 
-M: Time frames for RIR matrix H.
+* overl: window overlapping (in samples) for STFT.
 
-J: Number of dictionay elements.
+* M: Time frames for RIR matrix H.
 
-beta1: parameter for beta-divergence in Stage 1 (dictionary learning).
+* J: Number of dictionay elements.
 
-beta2: parameter for beta-divergence in Stage 2 (representation).
+* beta1: parameter for beta-divergence in Stage 1 (dictionary learning).
 
-ldaU: penalization parameter for building U in Stage 2.
+* beta2: parameter for beta-divergence in Stage 2 (representation).
 
-ldaH: penalization parameter for building H in Stage 2.
-```
+* ldaU: penalization parameter for building U in Stage 2.
+
+* ldaH: penalization parameter for building H in Stage 2.
+
 
 
 Recommended values for 16[kHz] signals are: wsize=512, overl=256, M=20, J=64, beta1=0.75, beta2=2, ldaU=0.1, ldaH = 0.3. For artifficial (noiseless) dereverberation, it is recommended to set ldaU=1e-4;
